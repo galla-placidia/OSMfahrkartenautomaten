@@ -1,0 +1,355 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2025-02-23T20:53:29Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2743161693",
+        "amenity": "vending_machine",
+        "brand": "Deutsche Bahn",
+        "brand:wikidata": "Q9322",
+        "brand:wikipedia": "de:Deutsche Bahn",
+        "indoor": "yes",
+        "operator": "DB Vertrieb GmbH",
+        "operator:wikidata": "Q1152124",
+        "operator:wikipedia": "de:DB Vertrieb",
+        "payment:coins": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:electronic_purses": "yes",
+        "payment:notes": "yes",
+        "ref": "B84891",
+        "vending": "public_transport_tickets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2440569,
+          50.0705482
+        ]
+      },
+      "id": "node/2743161693"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2743161736",
+        "amenity": "vending_machine",
+        "fixme": "Please sort by ref",
+        "brand": "ESWE Verkehrsgesellschaft mbH",
+        "brand:wikidata": "Q372587",
+        "brand:wikipedia": "de:ESWE Verkehrsgesellschaft",
+        "indoor": "yes",
+        "network": "RMV",
+        "payment:coins": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:electronic_purses": "yes",
+        "payment:notes": "yes",
+        "ref": "B84894",
+        "vending": "public_transport_tickets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2435241,
+          50.0707032
+        ]
+      },
+      "id": "node/2743161736"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2743161762",
+        "amenity": "vending_machine",
+        "fixme": "Please sort by ref",
+        "indoor": "yes",
+        "network": "RMV",
+        "payment:coins": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:electronic_purses": "yes",
+        "payment:notes": "yes",
+        "ref": "B84895",
+        "vending": "public_transport_tickets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.243544,
+          50.0706991
+        ]
+      },
+      "id": "node/2743161762"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2743161789",
+        "amenity": "vending_machine",
+        "brand": "Deutsche Bahn",
+        "brand:wikidata": "Q9322",
+        "brand:wikipedia": "de:Deutsche Bahn",
+        "fixme": "Please sort by ref",
+        "indoor": "yes",
+        "level": "0",
+        "operator": "DB Vertrieb GmbH",
+        "operator:wikidata": "Q1152124",
+        "operator:wikipedia": "de:DB Vertrieb",
+        "payment:coins": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:electronic_purses": "yes",
+        "payment:notes": "yes",
+        "ref": "B84983",
+        "vending": "public_transport_tickets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2435505,
+          50.0706877
+        ]
+      },
+      "id": "node/2743161789"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2743161819",
+        "amenity": "vending_machine",
+        "fixme": "Please sort by ref",
+        "indoor": "yes",
+        "network": "RMV",
+        "payment:coins": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:electronic_purses": "yes",
+        "payment:notes": "yes",
+        "ref": "B84984",
+        "vending": "public_transport_tickets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2435171,
+          50.0706909
+        ]
+      },
+      "id": "node/2743161819"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2743161838",
+        "amenity": "vending_machine",
+        "indoor": "yes",
+        "network": "RMV",
+        "payment:coins": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:electronic_purses": "yes",
+        "payment:notes": "yes",
+        "ref": "B84985",
+        "vending": "public_transport_tickets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2438369,
+          50.0711277
+        ]
+      },
+      "id": "node/2743161838"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2743161852",
+        "amenity": "vending_machine",
+        "indoor": "yes",
+        "network": "RMV",
+        "payment:coins": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:electronic_purses": "yes",
+        "payment:notes": "yes",
+        "ref": "B84892",
+        "vending": "public_transport_tickets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2438569,
+          50.0711331
+        ]
+      },
+      "id": "node/2743161852"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2743161864",
+        "amenity": "vending_machine",
+        "indoor": "yes",
+        "network": "RMV",
+        "payment:coins": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:electronic_purses": "yes",
+        "payment:notes": "yes",
+        "ref": "B84893",
+        "vending": "public_transport_tickets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2438234,
+          50.0711431
+        ]
+      },
+      "id": "node/2743161864"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2743161873",
+        "amenity": "vending_machine",
+        "brand": "Deutsche Bahn",
+        "brand:wikidata": "Q9322",
+        "brand:wikipedia": "de:Deutsche Bahn",
+        "indoor": "yes",
+        "operator": "DB Vertrieb GmbH",
+        "operator:wikidata": "Q1152124",
+        "operator:wikipedia": "de:DB Vertrieb",
+        "payment:coins": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:electronic_purses": "yes",
+        "payment:notes": "yes",
+        "ref": "B84986",
+        "vending": "public_transport_tickets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2438445,
+          50.0711473
+        ]
+      },
+      "id": "node/2743161873"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5191217881",
+        "amenity": "vending_machine",
+        "check_date": "2021-09-02",
+        "vending": "public_transport_tickets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.24286,
+          50.0713741
+        ]
+      },
+      "id": "node/5191217881"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5221960721",
+        "amenity": "vending_machine",
+        "fixme": "Please sort by ref",
+        "indoor": "yes",
+        "network": "RMV",
+        "vending": "public_transport_tickets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2435247,
+          50.0706811
+        ]
+      },
+      "id": "node/5221960721"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5221960722",
+        "amenity": "vending_machine",
+        "brand": "Deutsche Bahn",
+        "brand:wikidata": "Q9322",
+        "brand:wikipedia": "de:Deutsche Bahn",
+        "indoor": "yes",
+        "level": "0",
+        "operator": "DB Vertrieb GmbH",
+        "operator:wikidata": "Q1152124",
+        "operator:wikipedia": "de:DB Vertrieb",
+        "vending": "public_transport_tickets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2434556,
+          50.0707672
+        ]
+      },
+      "id": "node/5221960722"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5221960723",
+        "amenity": "vending_machine",
+        "brand": "Deutsche Bahn",
+        "brand:wikidata": "Q9322",
+        "brand:wikipedia": "de:Deutsche Bahn",
+        "indoor": "yes",
+        "level": "0",
+        "operator": "DB Vertrieb GmbH",
+        "operator:wikidata": "Q1152124",
+        "operator:wikipedia": "de:DB Vertrieb",
+        "vending": "public_transport_tickets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2434455,
+          50.0707801
+        ]
+      },
+      "id": "node/5221960723"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12078666210",
+        "amenity": "vending_machine",
+        "fixme": "Please sort by ref",
+        "indoor": "yes",
+        "network": "RMV",
+        "payment:coins": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:electronic_purses": "yes",
+        "payment:notes": "yes",
+        "vending": "public_transport_tickets"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.2435408,
+          50.0706795
+        ]
+      },
+      "id": "node/12078666210"
+    }
+  ]
+}

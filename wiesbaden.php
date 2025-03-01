@@ -10,9 +10,9 @@
 		</style>
 	</head>
 	<body>
-		<h1>Fahrkartenautomatenauswertung Dresden</h1>
-		<p><a href="https://twitter.com/DVBAG/status/398873000260673536">Die DVB hat in Dresden wohl 145 Fahrkartenautomaten</a>. <a href="https://twitter.com/DVBAG/status/602848041972924417"></a>(oder doch nur 142?)</a> Hier eine Auswertung über die OverpassAPI. Gezählt werden alle Fahrkartenautomaten mit "operator=Dresdner Verkehrsbetriebe"</p>
-		<p>Wir haben uns geeinigt das operator Tag auf "Dresdner Verkehrsbetriebe" zu vereinheitlichen. "DVB AG", "DVB", "Dresdner Verkehrsbetriebe AG" werden aber hier auch mit ausgewertet.</p>
+		<h1>Fahrkartenautomatenauswertung Wiesbaden</h1>
+		<p><a href="https://www.netzplan-wiesbaden.de/maps/tlnp/poi-list/eswewiesbaden_pois_fahrkartenautomaten">Die ESWE Verkehr hat in Wiesbaden 59 Fahrkartenautomaten</a>.</a> Hier eine Auswertung über die OverpassAPI. Gezählt werden alle Fahrkartenautomaten mit "operator=ESWE Verkehrsgesellschaft mbH"</p>
+		<p>Wir haben uns geeinigt das operator Tag auf "ESWE Verkehrsgesellschaft mbH" zu vereinheitlichen. "ESWE", "ESWE Verkehr", "ESWE Verkehrsgesellschaft mbH" werden aber hier auch mit ausgewertet.</p>
 		<p><a href="./">Die Karte mit den Automaten gibts hier</a></p>
 		<h2>Auswertung</h2>
 		<div id="auswertung">
@@ -23,19 +23,19 @@
 	<script>
 
 		function auswertung(anzahl){
-			$('#auswertung').html(anzahl + " von 145 (142?) DVB-Automaten");
+			$('#auswertung').html(anzahl + " von 59 ESWE-Automaten");
 		}
 
 		function parseOSM(data){
 			counter = 0;
-			DVB_operator = ['dvb ag', 'dvb', 'dresdner verkehrsbetriebe ag', 'dresdner verkehrsbetriebe'];
+			ESWE_operator = ['eswe verkehr', 'eswe', 'eswe verkehrsgesellschaft', 'eswe verkehrsgesellschaft mbh'];
 
 			$(data).find('node').each(function(){
 				$(this).find('tag').each(function(){
 					if($(this).attr("k")=="operator")
 						
 						var lowerOperator = $(this).attr("v").toLowerCase();
-						if (DVB_operator.indexOf(lowerOperator)>-1) counter++;
+						if (ESWE_operator.indexOf(lowerOperator)>-1) counter++;
 						
 				});
 			});

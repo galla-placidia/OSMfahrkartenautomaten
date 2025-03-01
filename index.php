@@ -39,8 +39,8 @@
 					$('#loading').show().effect("highlight", {}, 700);
 					loadingcounter++;
 					//CrossoverAPI XML request
-					XMLRequestText = '( node ["vending"="public_transport_tickets"]["amenity"="vending_machine"]  ( '+lat2+','+lon1+','+lat1+','+lon2+ ' ); >; ); out;';
-					//XMLRequestText = '( node ["vending"="public_transport_tickets"] ( '+lat2+','+lon1+','+lat1+','+lon2+ ' ); >; ); out;';
+
+					XMLRequestText = '( node ["vending"="public_transport_tickets"] ( '+lat2+','+lon1+','+lat1+','+lon2+ ' ); >; ); out;';
 					
 					
 					//URL Codieren
@@ -122,14 +122,10 @@
 					
 					var EleText = "";
 					var amenity = "";
-					var description = "";
 					var operator = "";
-					var manufacturer = "";
-					var network = "";
 					var ref = "";
 					var covered = "";
 					var payment_coins = "";
-					var payment_currency = "";
 					var payment_electronic_purses = "";
 					var payment_notes = "";
 					var payment_ep_geldkarte = "";
@@ -137,19 +133,11 @@
 					var payment_debit_card = "";
 					var payment_girocard = "";
 					var payment_cless = "";
-					
-					var payment_cash = "";
-					var payment_maestro = "";
-					var payment_mastercard = "";
-					var payment_v_pay = "";
-					var payment_visa = "";
-										
 					var note = "";
 					var fixme = "";
 					var costommarker = "";
 					var level = "";
 					var wheelchair = "";
-					var indoor = "";
 					
 					$(this).find('tag').each(function(){
 						EleKey = $(this).attr("k");
@@ -159,22 +147,10 @@
 						{
 							amenity = EleValue;
 						}
-						if ((EleKey=="description"))
-						{
-							description = EleValue;
-						}
 						if ((EleKey=="operator"))
 						{
 							operator = EleValue;
 						}
-						if ((EleKey=="manufacturer"))
-						{
-							manufacturer = EleValue;
-						}
-						if ((EleKey=="network"))
-						{
-							network = EleValue;
-						}						
 						if ((EleKey=="ref"))
 						{
 							ref = EleValue;
@@ -217,30 +193,6 @@
 						{
 							payment_account_cards = EleValue;
 						}
-						if ((EleKey=="payment:maestro"))
-						{
-							payment_maestro = EleValue;
-						}						
-						if ((EleKey=="payment:mastercard"))
-						{
-							payment_mastercard = EleValue;
-						}
-						if ((EleKey=="payment:account_cards"))
-						{
-							payment_v_pay = EleValue;
-						}
-						if ((EleKey=="payment:visa"))
-						{
-							payment_visa = EleValue;
-						}
-						if ((EleKey=="currency:EUR"))
-						{
-							payment_currency = EleValue;
-						}
-
-						
-
-						
 						if ((EleKey=="note"))
 						{
 							note = EleValue;
@@ -257,10 +209,6 @@
 						{
 							wheelchair = EleValue;
 						}
-						if ((EleKey=="indoor:yes"))
-						{
-							indoor = EleValue;
-						}
 						if(EleKey == "payment:contactless")
 							payment_cless = EleValue;
 						
@@ -270,7 +218,6 @@
 					
 					if (amenity!=""){
 						if (operator=="") operator = "<i><b>unbekannt</i></b>";
-						if (description != "") name = "<h2>" + description + "</h2>";
 						if (payment_coins=="") payment_coins = "<i><b>unbekannt</i></b>"; 
 						if (payment_notes=="") payment_notes = "<i><b>unbekannt</i></b>";
 
@@ -278,16 +225,10 @@
 						if (payment_ep_geldkarte!="") payment_ep_geldkarte = "<tr><td>GeldKarte: </td><td>" + yesno(payment_ep_geldkarte) + "</td></tr>";
 						if (payment_account_cards!="") payment_account_cards = "<tr><td>Kundenkarte: </td><td>" + yesno(payment_account_cards) + "</td></tr>";
 						if (payment_electronic_purses!="") payment_electronic_purses = "<tr><td>Karte: </td><td>" + yesno(payment_electronic_purses) + "</td></tr>";
-						if (payment_debit_card!="") payment_debit_card = "<tr><td>Debitkarte: </td><td>" + yesno(payment_debit_card) + "</td></tr>";
+						if (payment_debit_card!="") payment_debit_card = "<tr><td>Girokarte: </td><td>" + yesno(payment_debit_card) + "</td></tr>";
 						if (payment_girocard!="") payment_girocard = "<tr><td>Girokarte: </td><td>" + yesno(payment_girocard) + "</td></tr>";
 						if (payment_cless != "") payment_cless = "<tr><td>Kontaktlos: </td><td>" + yesno(payment_cless) + "</td></tr>";
-						if (payment_maestro != "") payment_maestro = "<tr><td>Maestro: </td><td>" + yesno(payment_maestro) + "</td></tr>";
-							
-						if (payment_mastercard != "") payment_mastercard = "<tr><td>Mastercard: </td><td>" + yesno(payment_mastercard) + "</td></tr>";
-							
-						if (payment_visa != "") payment_visa = "<tr><td>Visa: </td><td>" + yesno(payment_visa) + "</td></tr>";
-							
-						if (payment_v_pay!="") payment_v_pay = "<tr><td>VPay: </td><td>" + yesno(payment_v_pay) + "</td></tr>";	
+
 						if (covered!="") covered = "<tr><td>Überdacht: </td><td>" + yesno(covered) + "</td></tr>";
 						if (note!="") note = "<tr><td>Notiz: </td><td>" + note + "</td></tr>";
 						if (fixme!="") note = "<tr><td>Fixme: </td><td>" + fixme + "</td></tr>";
@@ -297,12 +238,9 @@
 						if (ref=="") ref = "<i><b>unbekannt</i></b>";
 						
 						EleText = 
-							"<b>Betreiber: " + operator + "</b> (Verbund: " + network + ")<br>" + 
-							"<b>Hersteller: </b>" + manufacturer + "<br>" +
+							"<b>Betreiber: " + operator + "</b><br>" + 
 							"<small>Zahlungsmöglichkeiten</small>" + 
 							"<div class='infoblock'><table>" + 
-
-							"<tr><td>Währung: Euro </td><td>" + yesno(payment_currency) + "</td></tr>" + 
 							"<tr><td>Münzen: </td><td>" + yesno(payment_coins) + "</td></tr>" + 
 							"<tr><td>Scheine: </td><td>" + yesno(payment_notes) + "</td></tr>" + 
 
@@ -313,12 +251,6 @@
 							payment_girocard +
 							payment_cless +
 							
-					
-							payment_v_pay +
-							payment_visa +
-							payment_mastercard + 
-							payment_maestro +
-								
 							"</table></div>" + 
 							"<div class='infoblock'><table>" + 
 							level +
@@ -327,8 +259,7 @@
 							"<tr><td>Automatennummer: </td><td>" + ref + "</td></tr>" + 
 							note + 
 							"</table></div>" + 
-							"<br><a href='https://www.openstreetmap.org/edit#map=19/50.070765/8.243709'>Edit in osm</a>"
-							//"<br><a href='#' onclick='openinJOSM(\""+EleType+"\",\""+EleID+"\")'>edit in JOSM</a>" 
+							"<br><a href='#' onclick='openinJOSM(\""+EleType+"\",\""+EleID+"\")'>edit in JOSM</a>" 
 							;
 
 						
@@ -425,7 +356,7 @@
 	    		}
 	    		else
 	    		{
-	    			var ort = wi; //new L.LatLng(51.07, 13.73); // geographical point (longitude and latitude)
+	    			var ort = new L.LatLng(51.07, 13.73); // geographical point (longitude and latitude)
 	    		}
 				map.setView(ort, 14).addLayer(cloudmade);
 

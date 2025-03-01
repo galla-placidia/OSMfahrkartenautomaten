@@ -1,10 +1,10 @@
 {
     "data_format": 1,
-    "data_url": "https://ubahnverleih.github.io/OSMfahrkartenautomaten/taginfo.json",
+    "data_url": "https://osm.gama-web.de/taginfo.json",
     "project": {
         "name": "Fahrkartenautomaten in OSM",
         "description": "Diese Karte zeigt Fahrkartenautomaten in Openstreetmap",
-		"project_url": "https://ubahnverleih.github.io/OSMfahrkartenautomaten/",
+		"project_url": "https://osm.gama-web.de/",
         "doc_url": "https://github.com/ubahnverleih/OSMfahrkartenautomaten"
     },
     "tags": [
