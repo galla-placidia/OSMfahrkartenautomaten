@@ -1,6 +1,6 @@
 # Fahrkartenautomaten in OSM
 
-[Testinstallation](http://ubahnverleih.github.io/OSMfahrkartenautomaten/) und [Source](https://github.com/ubahnverleih/OSMfahrkartenautomaten) und [flattr](https://flattr.com/submit/auto?user_id=ubahnverleih&url=http%3A%2F%2Fosm.lyrk.de%2FOSMfahrkartenautomaten)
+[Testinstallation](https://osm.gama-web.de) und [Source](https://github.com/galla-placidia/OSMfahrkartenautomaten)
 
 Diese Karte zeigt Fahrkartenautomaten in [Openstreetmap](http://osm.org). Es werden Betreiber, Zahlungsmöglichkeiten, Refs, Notizen und fixmes angezeigt.
 
