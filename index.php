@@ -308,7 +308,7 @@
 		<div id="map" style="height: 100%;"></div>
 		<script>
 			var map = new L.Map('map');
-			var cloudmadeUrl = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+			var cloudmadeUrl = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
     			cloudmadeAttrib = 'Map data &copy; 2013 OpenStreetMap contributors, Data via <a href="http://www.overpass-api.de/">Overpass API</a>',
     			cloudmade = new L.TileLayer(cloudmadeUrl, {maxZoom: 19, attribution: cloudmadeAttrib});
     		
